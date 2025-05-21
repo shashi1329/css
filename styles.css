@@ -1,0 +1,109 @@
+* {
+  @import url("https://fonts.cdnfonts.com/css/google-sans");
+  font-family: "Product Sans", sans-serif;
+  font-family: "Product Sans Thin", sans-serif;
+  font-family: "Product Sans Light", sans-serif;
+  font-family: "Product Sans Medium", sans-serif;
+  font-family: "Product Sans Black", sans-serif;
+}
+body {
+  background: #d474a1;
+  background: radial-gradient(
+    circle,
+    rgba(212, 116, 161, 1) 0%,
+    rgba(129, 163, 201, 1) 100%
+  );
+  color: aqua;
+}
+#head:hover {
+  background: #009fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-clip: text;
+  color: transparent;
+}
+form {
+  width: 500px;
+}
+fieldset {
+  border: 3px solid rgb(46, 5, 5);
+  border-radius: 15px;
+}
+input:required {
+  border: 3px solid rgb(46, 28, 160);
+}
+input:optional {
+  border: 3px solid rgb(47, 217, 217);
+}
+input:read-only {
+  border: 3px solid black;
+}
+input[type="radio"]:checked {
+  height: 20px;
+  width: 20px;
+}
+input[type="radio"] + label:checked {
+  color: coral;
+}
+input[type="submit"] {
+  border: 3px solid rgb(158, 38, 205);
+  border-radius: 15px;
+}
+select {
+  background: rgb(80, 255, 235);
+  border-radius: 5px;
+  cursor: pointer;
+}
+input:focus {
+  background-color: #d87fa9;
+}
+
+input[type="text"] + span {
+  display: none;
+}
+input[type="text"]:hover + span {
+  display: inline;
+}
+
+input[type="tel"] + span {
+  display: none;
+}
+input[type="tel"]:hover + span {
+  display: inline;
+}
+
+input[type="email"] + span {
+  display: none;
+}
+input[type="email"]:hover + span {
+  display: inline;
+}
+
+input[type="password"] + span {
+  display: none;
+}
+input[type="password"]:hover + span {
+  display: inline;
+}
+img {
+  display: none;
+}
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 15px;
+  width: 15px;
+}
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 15px;
+  width: 15px;
+}
